@@ -5,7 +5,7 @@ import ServicesSection from "@/components/sections/ServicesSection"
 
 export default function ServicesPage() {
     return (
-        <main className="bg-black text-white min-h-screen pt-32">
+        <main className="bg-transparent text-white min-h-screen pt-32">
             <div className="px-6 max-w-7xl mx-auto">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}

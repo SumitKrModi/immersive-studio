@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 
 export default function AboutPage() {
     return (
-        <main className="bg-black text-white min-h-screen pt-32 px-6">
+        <main className="bg-transparent text-white min-h-screen pt-32 px-6">
             <div className="max-w-7xl mx-auto">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -13,7 +13,7 @@ export default function AboutPage() {
                     className="mb-20"
                 >
                     <h1 className="text-sm uppercase tracking-[0.4em] text-indigo-500 font-bold mb-6">Our Narrative</h1>
-                    <h2 className="text-6xl md:text-8xl font-black tracking-tighter leading-none">
+                    <h2 className="text-6xl md:text-8xl font-black tracking-tighter leading-none z-10">
                         BUILT FOR THE <br /> MOMENTS THAT <br /> MATTER.
                     </h2>
                 </motion.div>

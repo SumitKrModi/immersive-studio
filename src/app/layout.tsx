@@ -2,6 +2,7 @@ import "./globals.css"
 import type { Metadata } from "next"
 import Navbar from "@/components/layout/Navbar"
 import Footer from "@/components/layout/Footer"
+import Scene from "@/components/three/Scene"
 
 export const metadata: Metadata = {
   title: "Zenvy WebTech | Defining Next-Gen Web",
@@ -16,8 +17,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className="bg-black text-white antialiased selection:bg-indigo-500/30">
+        <Scene />
         <Navbar />
-        {children}
+        <div className="relative z-10">
+          {children}
+        </div>
         <Footer />
       </body>
     </html>

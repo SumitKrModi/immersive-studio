@@ -35,7 +35,7 @@ const projects = [
 
 export default function ProjectsSection() {
     return (
-        <section className="py-32 px-6 bg-black">
+        <section className="py-32 px-6 bg-transparent">
             <div className="max-w-7xl mx-auto">
                 <div className="mb-16">
                     <h2 className="text-sm uppercase tracking-[0.3em] text-indigo-500 font-bold mb-4">The Growth Matrix</h2>
