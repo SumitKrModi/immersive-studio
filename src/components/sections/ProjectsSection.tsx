@@ -39,7 +39,7 @@ export default function ProjectsSection() {
             <div className="max-w-7xl mx-auto">
                 <div className="mb-16">
                     <h2 className="text-sm uppercase tracking-[0.3em] text-indigo-500 font-bold mb-4">The Growth Matrix</h2>
-                    <h3 className="text-4xl md:text-6xl font-black tracking-tighter">OUR RESULTS DO <br /> THE TALKING.</h3>
+                    <h3 className="text-3xl md:text-6xl font-black tracking-tighter">OUR RESULTS DO <br /> THE TALKING.</h3>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[300px]">
@@ -54,7 +54,7 @@ export default function ProjectsSection() {
                             <div className="absolute inset-0 z-0 opacity-40 group-hover:opacity-70 transition-opacity duration-700">
                                 <img src={project.img} alt={project.title} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100" />
                             </div>
-                            <div className="absolute inset-0 z-10 bg-gradient-to-t from-black via-black/20 to-transparent p-8 flex flex-col justify-end">
+                            <div className="absolute inset-0 z-10 bg-linear-to-t from-black via-black/20 to-transparent p-8 flex flex-col justify-end">
                                 <span className="text-[10px] uppercase tracking-widest text-indigo-400 font-bold mb-2">{project.category}</span>
                                 <h4 className="text-2xl font-bold mb-1">{project.title}</h4>
                                 <p className="text-sm text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">

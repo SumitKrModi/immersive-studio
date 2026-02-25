@@ -13,7 +13,7 @@ export default function CTASection() {
                 <motion.h2
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    className="text-fluid-h2 font-black tracking-tighter uppercase break-words px-4"
+                    className="text-fluid-h2 font-black tracking-tighter uppercase wrap-break-word px-4"
                 >
                     READY FOR <br /> COMMITMENT?
                 </motion.h2>

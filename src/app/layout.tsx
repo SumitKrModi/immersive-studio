@@ -19,7 +19,7 @@ export default function RootLayout({
       <body className="bg-black text-white antialiased selection:bg-indigo-500/30">
         <Scene />
         <Navbar />
-        <div className="relative z-10">
+        <div id="main-content" className="relative z-10 transition-all duration-500">
           {children}
         </div>
         <Footer />

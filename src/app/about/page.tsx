@@ -13,7 +13,7 @@ export default function AboutPage() {
                     className="mb-20"
                 >
                     <h1 className="text-sm uppercase tracking-[0.4em] text-indigo-500 font-bold mb-6">Our Narrative</h1>
-                    <h2 className="text-6xl md:text-8xl font-black tracking-tighter leading-none z-10">
+                    <h2 className="text-3xl md:text-8xl font-black tracking-tighter leading-none z-10">
                         BUILT FOR THE <br /> MOMENTS THAT <br /> MATTER.
                     </h2>
                 </motion.div>

@@ -15,7 +15,7 @@ export default function ServicesSection() {
             <div className="max-w-7xl mx-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
                     <div>
-                        <h2 className="text-5xl md:text-7xl font-black tracking-tighter leading-none">
+                        <h2 className="text-4xl md:text-7xl font-black tracking-tighter leading-none">
                             SERVICES <br /> TO IGNITE <br /> GROWTH.
                         </h2>
                         <p className="mt-8 text-gray-500 max-w-sm text-lg tracking-tight">

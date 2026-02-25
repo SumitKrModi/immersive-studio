@@ -7,12 +7,15 @@ import { motion, AnimatePresence } from "framer-motion"
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
-  // Block scroll when menu is open
+  // Block scroll and blur background when menu is open
   useEffect(() => {
+    const mainContent = document.getElementById("main-content")
     if (isOpen) {
       document.body.style.overflow = "hidden"
+      mainContent?.classList.add("modal-blur")
     } else {
       document.body.style.overflow = "unset"
+      mainContent?.classList.remove("modal-blur")
     }
   }, [isOpen])
 
@@ -24,8 +27,8 @@ export default function Navbar() {
   ]
 
   return (
-    <header className="fixed top-0 left-0 w-full z-[100] backdrop-blur-xl border-b border-white/5 bg-black/50">
-      <div className="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center relative z-[101]">
+    <header className="fixed top-0 left-0 w-full z-100 backdrop-blur-xl border-b border-white/5 bg-black/50">
+      <div className="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center relative z-101">
 
         <Link href="/" className="text-2xl font-bold tracking-tighter hover:text-indigo-400 transition-colors">
           ZENVY
@@ -43,7 +46,7 @@ export default function Navbar() {
         {/* Mobile Toggle */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden flex flex-col gap-1.5 p-2 z-[101]"
+          className="md:hidden flex flex-col gap-1.5 p-2 z-101"
         >
           <motion.span
             animate={isOpen ? { rotate: 45, y: 7 } : { rotate: 0, y: 0 }}
@@ -68,11 +71,10 @@ export default function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            style={{ backgroundColor: '#000000', zIndex: 9999 }}
-            className="fixed inset-0 md:hidden flex flex-col"
+            className="fixed inset-0 md:hidden flex flex-col bg-black/95 backdrop-blur-3xl z-9999"
           >
             {/* Overlay Header */}
-            <div className="flex justify-between items-center px-6 py-5 border-b border-white/5 bg-black">
+            <div className="flex justify-between items-center px-6 py-5 border-b border-white/5">
               <Link href="/" onClick={() => setIsOpen(false)} className="text-2xl font-bold tracking-tighter">
                 ZENVY
               </Link>
@@ -88,7 +90,7 @@ export default function Navbar() {
             </div>
 
             {/* Menu Links */}
-            <nav className="flex-1 flex flex-col justify-center items-center gap-12 px-6">
+            <nav className="flex-1 flex flex-col justify-center items-center gap-8 px-6">
               {navLinks.map((link, i) => (
                 <motion.div
                   key={link.name}
@@ -99,7 +101,7 @@ export default function Navbar() {
                   <Link
                     href={link.href}
                     onClick={() => setIsOpen(false)}
-                    className="text-5xl font-black tracking-tighter uppercase hover:text-indigo-500 transition-colors"
+                    className="text-3xl font-black tracking-tighter uppercase hover:text-indigo-500 transition-colors"
                   >
                     {link.name}
                   </Link>
