@@ -28,11 +28,11 @@ export default function ContactPage() {
                         <div className="mt-20 space-y-8">
                             <div>
                                 <span className="block text-gray-600 text-[10px] uppercase tracking-widest font-bold mb-2">New Projects</span>
-                                <a href="mailto:hello@zenvy.tech" className="text-2xl font-bold hover:text-indigo-400 transition-colors">hello@zenvy.tech</a>
+                                <a href="mailto:zenvywebtech@gmail.com" className="text-2xl font-bold hover:text-indigo-400 transition-colors">zenvywebtech@gmail.com</a>
                             </div>
                             <div>
                                 <span className="block text-gray-600 text-[10px] uppercase tracking-widest font-bold mb-2">Office</span>
-                                <p className="text-2xl font-bold">San Francisco, CA</p>
+                                <p className="text-2xl font-bold"></p>
                             </div>
                         </div>
                     </motion.div>

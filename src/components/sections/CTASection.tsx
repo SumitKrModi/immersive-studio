@@ -34,15 +34,17 @@ export default function CTASection() {
                     </div>
                     <div>
                         <span className="block text-gray-600 text-[10px] uppercase tracking-widest font-bold mb-3">Social</span>
-                        <a href="#" className="text-lg md:text-base hover:text-indigo-400 transition-colors">Instagram</a>
+                        <a href="https://www.instagram.com/zenvywebtech?igsh=MTJiMzdjMnEzOXJtZQ==" className="text-lg md:text-base hover:text-indigo-400 transition-colors">Instagram</a>
                     </div>
                     <div>
                         <span className="block text-gray-600 text-[10px] uppercase tracking-widest font-bold mb-3">Email</span>
-                        <a href="mailto:hello@zenvy.tech" className="text-lg md:text-base hover:text-indigo-400 transition-colors break-all">hello@zenvy.tech</a>
+                        <a href="mailto:hello@zenvy.tech" className="text-md md:text-sm hover:text-indigo-400 transition-colors break-all">zenvywebtech@gmail.com</a>
                     </div>
                     <div>
                         <span className="block text-gray-600 text-[10px] uppercase tracking-widest font-bold mb-3">Call</span>
-                        <a href="tel:+14158404427" className="text-lg md:text-base hover:text-indigo-400 transition-colors">+1 (415) 840 4427</a>
+                        <a href="tel:+91 92049 10346" className="text-lg md:text-base hover:text-indigo-400 transition-colors">+91 92049 10346</a> <br />
+                        <a href="tel:+91 70042 87513" className="text-lg md:text-base hover:text-indigo-400 transition-colors">+91 7004287513</a> <br />
+                        <a href="tel:+91 89358 88196" className="text-lg md:text-base hover:text-indigo-400 transition-colors">+91 9204910346</a>
                     </div>
                 </div>
             </div>
